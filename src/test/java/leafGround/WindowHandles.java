@@ -1,5 +1,6 @@
 package leafGround;
 
+import org.testng.annotations.Test;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -30,10 +31,11 @@ public class WindowHandles {
 			if (!parent.equals(child_window)) {
 				driver.switchTo().window(child_window);
 				System.out.println(driver.switchTo().window(child_window).getTitle());
-				driver.close();
+				driver.quit();
 			}
 
-			driver.switchTo().window(parent);
+		
+		
 		}
 
 	}
