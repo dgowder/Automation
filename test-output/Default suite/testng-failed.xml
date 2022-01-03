@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="leafGround.WindowHandles">
+      <class name="testDataHandling.TestData">
         <methods>
-          <include name="openMultipleWindow"/>
+          <include name="showData"/>
         </methods>
-      </class> <!-- leafGround.WindowHandles -->
+      </class> <!-- testDataHandling.TestData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
