@@ -1,23 +1,22 @@
 package leafGround;
 
 import org.testng.annotations.Test;
+
+import CommonUtility.base;
+
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-public class WindowHandles {
-	WebDriver driver;
+
+public class WindowHandles extends base{
 
 	@Test
 	public void OpenWindow() {
-		System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\chrome\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	    driver=initializeDriver();   //initialize webdriver from base class
 		driver.get("http://www.leafground.com/pages/Window.html");
+		driver.manage().window().maximize();
 		driver.findElement(By.id("home")).click();
 
 		String parent = driver.getWindowHandle();
@@ -42,8 +41,7 @@ public class WindowHandles {
 
 	@Test
 	public void openMultipleWindow() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\chrome\\chromedriver.exe");
-		driver = new ChromeDriver();
+		driver=initializeDriver(); 
 		driver.manage().window().maximize();
 		driver.get("http://www.leafground.com/pages/Window.html");
 		driver.findElement(By.xpath("//button[contains(text(),'Open Multiple')]")).click();
@@ -70,7 +68,7 @@ public class WindowHandles {
 		Set<String> windows1 = driver.getWindowHandles();
 		for (String parent : windows1) {
 			driver.switchTo().window(parent);
-			driver.manage().window().minimize();
+			driver.manage().window().maximize();
 			System.out.println(driver.getTitle());
 			if (driver.getTitle().contains("Interact with Windows")) {
 			
