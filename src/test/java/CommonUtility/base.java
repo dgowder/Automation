@@ -28,7 +28,7 @@ public class base {
 		Properties prop = new Properties();
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream("C:\\Users\\Deepa\\git\\AutomationTestNGPractice\\automation\\CommonFiles\\data.properties");
+			fis = new FileInputStream("C:\\Users\\Deepu\\git\\automation\\CommonFiles\\data.properties");
 		    prop.load(fis);
 		} catch (IOException e) {
 			System.out.println("file not reading properly. Please check the path");
@@ -38,7 +38,7 @@ public class base {
 		if (browser.equalsIgnoreCase("chrome"))
 		{
 			
-			System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\chrome\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chrome\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

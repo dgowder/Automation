@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Deepa\AppData\Local\Temp\testng-eclipse--1714921783\testng-customsuite.xml</span>
+                    <span>C:\Users\Deepu\AppData\Local\Temp\testng-eclipse--1722638918\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testDataHandling.TestData" class="method navigator-link" hash-for-method="showData(admin, adminc)">showData(admin, adminc)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testDataHandling.TestData" class="method navigator-link" hash-for-method="showData(dgowder, dgowder2)">showData(dgowder, dgowder2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="leafGround.WindowHandles" class="method navigator-link" hash-for-method="OpenWindow">OpenWindow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,23 +122,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testDataHandling.TestData</span>
+              <span class="class-name">leafGround.WindowHandles</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="showData(admin, adminc)">
-                  </a> <!-- showData(admin, adminc) -->
-                  <span class="method-name">showData</span>
-                  <span class="parameters">(admin, adminc)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="showData(dgowder, dgowder2)">
-                  </a> <!-- showData(dgowder, dgowder2) -->
-                  <span class="method-name">showData</span>
-                  <span class="parameters">(dgowder, dgowder2)</span>
+                  <a name="OpenWindow">
+                  </a> <!-- OpenWindow -->
+                  <span class="method-name">OpenWindow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Deepa\AppData\Local\Temp\testng-eclipse--1714921783\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Deepu\AppData\Local\Temp\testng-eclipse--1722638918\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -160,11 +146,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testDataHandling.TestData&quot;&gt;
+      &lt;class name=&quot;leafGround.WindowHandles&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;showData&quot;/&gt;
+          &lt;include name=&quot;OpenWindow&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testDataHandling.TestData --&gt;
+      &lt;/class&gt; &lt;!-- leafGround.WindowHandles --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -204,20 +190,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'showData')
-data.setCell(0, 2, 'testDataHandling.TestData')
-data.setCell(0, 3, 27);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'showData')
-data.setCell(1, 2, 'testDataHandling.TestData')
-data.setCell(1, 3, 15);
+data.setCell(0, 1, 'OpenWindow')
+data.setCell(0, 2, 'leafGround.WindowHandles')
+data.setCell(0, 3, 11110);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 ms</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -232,9 +214,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">leafGround.WindowHandles</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openMultipleWindow</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -243,14 +232,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testDataHandling.TestData</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">leafGround.WindowHandles</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">showData(admin, adminc)</span>
+                <span class="method-name">OpenWindow</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">showData(dgowder, dgowder2)</span>
-                <span class="method-start">70 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
